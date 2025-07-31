@@ -11,7 +11,7 @@ This project uses MediaPipe to extract hand landmarks from video frames and an S
 ## Usage Instructions
 
 ### 1. Install Requirements
-
+Direct to project folder ``` cd AI4LI ```
 ```pip install -r requirements.txt```
 ### 2. Run
 ``` python main.py ```
