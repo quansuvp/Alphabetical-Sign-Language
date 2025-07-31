@@ -8,10 +8,12 @@ This project uses MediaPipe to extract hand landmarks from video frames and an S
 - Classify basic hand signs using an SVM model (e.g., A, B, C, etc.).
 - Accuracy up to 97.5% on validation set.
 
-## Setup Instructions
+## Usage Instructions
 
 ### 1. Install Requirements
 
 ```pip install -r requirements.txt```
 ### 2. Run
 ``` python main.py ```
+## Video demo
+https://www.youtube.com/watch?v=LrAz4o7mspY
