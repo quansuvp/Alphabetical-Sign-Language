@@ -9,13 +9,13 @@ import joblib
 
 
 
-base_options = python.BaseOptions(model_asset_path='C:/Users/Admin/Downloads/hand_landmarker.task')
+base_options = python.BaseOptions(model_asset_path='./hand_landmarker.task')
 options = vision.HandLandmarkerOptions(base_options=base_options,
                                     num_hands=2)
 detector = vision.HandLandmarker.create_from_options(options)
 
-scaler = joblib.load('C:/Users/Admin/Downloads/scaler.joblib')  # Load the scaler
-svm = joblib.load('C:/Users/Admin/Downloads/svm_model.joblib')  # Load the SVM model
+scaler = joblib.load('./scaler.joblib')  # Load the scaler
+svm = joblib.load('./svm_model.joblib')  # Load the SVM model
 
 classes = {'A':0,'B':1,'C':2, 'D':3,'E':4,'F':5,'G':6,'H':7,'H_multiple':8,'I':9,'L':10,'empty':11}
 classes_from_index = {0:'A',1:'B',2:'C',3:'D',4:'E',5:'F',6:'G',7:'H',8:'H_multiple',9:'I',10:'L',11:'empty'}
